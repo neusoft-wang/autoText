@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="text_selenium"
+           tests="3"
+           failures="2"
+           errors="0"
+           skipped="1"
+           time="0.000">
+  <properties />
+            <testcase name="setUp" time="0.000" classname="com.selenium.test.utils.Baidu">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="Unable to bind to locking port 7054 within 45000 ms
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8e7ca8e37638dc3091b2440b90a1d8686f&apos;, time: &apos;2015-02-27 09:10:26&apos;
+System info: host: &apos;DESKTOP-7S282RB&apos;, ip: &apos;192.168.154.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: FirefoxDriver"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-7S282RB', ip: '192.168.154.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: FirefoxDriver
+  org.openqa.selenium.internal.SocketLock.lock(SocketLock.java:98)
+  org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:84)
+  org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+  org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:193)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+  org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+  com.selenium.test.utils.Baidu.setUp(Baidu.java:19)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:552)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+  org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="tearDown" time="0.000" classname="com.selenium.test.utils.Baidu">
+                <failure type="java.lang.NullPointerException"
+                  message="(null)"
+              >
+<![CDATA[java.lang.NullPointerException
+  com.selenium.test.utils.Baidu.tearDown(Baidu.java:35)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+  org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:552)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+  org.testng.internal.Invoker.invokeConfigurations(Invoker.java:140)
+  org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+  java.lang.Thread.run(Thread.java:745)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="testBaidu" time="0.0" classname="com.selenium.test.utils.Baidu">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

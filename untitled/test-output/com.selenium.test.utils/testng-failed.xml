@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.selenium.test.utils]" parallel="true">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="text_selenium(failed)" parallel="true">
+    <classes>
+      <class name="com.selenium.test.utils.Baidu">
+        <methods>
+          <include name="testBaidu"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.selenium.test.utils.Baidu -->
+      <class name="com.selenium.test.utils.Yangjun">
+        <methods>
+          <include name="testYangjun"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.selenium.test.utils.Yangjun -->
+    </classes>
+  </test> <!-- text_selenium(failed) -->
+</suite> <!-- Failed suite [com.selenium.test.utils] -->
